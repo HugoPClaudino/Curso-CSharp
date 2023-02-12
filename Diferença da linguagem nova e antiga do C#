@@ -1,0 +1,14 @@
+//Método novo do C#
+Console.WriteLine("Hello, World!");
+/*Método Clássico
+using System; atualmente descenessario, já é importado automaticamente no Visual Studio
+namespace PrimeiroProjeto
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}*/
