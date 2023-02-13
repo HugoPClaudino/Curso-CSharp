@@ -1,0 +1,170 @@
+//C# atual
+bool completo = false;
+bool incompleto = true;
+char genero = 'F';
+char letra = '\u2191';
+sbyte sb1 = sbyte.MinValue;
+sbyte sb2 = sbyte.MaxValue;
+short s1 = short.MinValue;
+short s2 = short.MaxValue;
+int i1 = int.MinValue;
+int i2 = int.MaxValue;
+long l1 = long.MinValue;
+long l2 = long.MaxValue;
+byte b1 = byte.MinValue;
+byte b2 = byte.MaxValue;
+ushort u1 = ushort.MinValue;
+ushort u2 = ushort.MaxValue;
+uint ui1 = uint.MinValue;
+uint ui2 = uint.MaxValue;
+ulong ul1 = ulong.MinValue;
+ulong ul2 = ulong.MaxValue;
+float f1 = float.MinValue;
+float f2 = float.MaxValue;
+double d1 = double.MinValue;
+double d2 = double.MaxValue;
+decimal de1 = decimal.MinValue;
+decimal de2 = decimal.MaxValue;
+String nome = "Maria Green";
+Object obj1 = "Alex Brown";
+Object obj2 = 4.5f;
+//float n5 = 4.5f; Tem que deixar nitido que é float(f)
+//double n6 = 4.5; Nao segue a mesma regra anterior 
+
+Console.WriteLine("        Tipos Basicos de dados");
+Console.WriteLine();
+Console.WriteLine(" Um Bool define valor verdadeiros e falsos espaço gasto em byts: 1/2 " + completo + " ou " + incompleto);
+Console.WriteLine();
+Console.WriteLine(" Um char é o primeiro caractere espaço gasto em byts: 2 EX: " + genero);
+Console.WriteLine(" " + letra + " Podendo ser utilizado um bitcode tambem");
+Console.WriteLine(" String representa o texto (é imutavel): " + nome);
+Console.WriteLine();
+Console.WriteLine(" Objetos podem carregar todos os tipos: " + obj1);
+Console.WriteLine(" Outro Objeto: " + obj2);
+Console.WriteLine();
+Console.WriteLine("       Valores minimos e máximos armazenados:");
+Console.WriteLine();
+Console.WriteLine("       SByte");
+Console.WriteLine(" Min:" + sb1 + " Max: " + sb2 + " Espaço gasto em byts: 1");
+Console.WriteLine();
+Console.WriteLine("       Short");
+Console.WriteLine(" Min:" + s1 + " Max:" + s2 + " Espaço gasto em byts: 2");
+Console.WriteLine();
+Console.WriteLine("       Int  ");
+Console.WriteLine(" Min:" + i1 + " Max:" + i2 + " Espaço gasto em byts: 4");
+Console.WriteLine();
+Console.WriteLine("       Long ");
+Console.WriteLine(" Min:" + l1 + " Max:" + l2 + " Espaço gasto em byts: 1");
+Console.WriteLine();
+Console.WriteLine("       Byte ");
+Console.WriteLine(" Min:" + b1 + " Max:" + b2 + " Espaço gasto em byts: 1");
+Console.WriteLine();
+Console.WriteLine("       Ushort");
+Console.WriteLine(" Min:" + u1 + " Max:" + u2 + " Espaço gasto em byts: 2");
+Console.WriteLine();
+Console.WriteLine("       Uint  ");
+Console.WriteLine(" Min:" + ui1 + " Max:" + ui2 + " Espaço gasto em byts: 4");
+Console.WriteLine();
+Console.WriteLine("       Ulong ");
+Console.WriteLine(" Min:" + ul1 + " Max:" + ul2 + " Espaço gasto em byts: 8");
+Console.WriteLine();
+Console.WriteLine("       Float  ");
+Console.WriteLine(" Min:" + f1 + " Max:" + f2 + " Espaço gasto em byts: 4");
+Console.WriteLine();
+Console.WriteLine("       Double ");
+Console.WriteLine(" Min:" + d1 + " Max:" + d2 + " Espaço gasto em byts: 8");
+Console.WriteLine();
+Console.WriteLine("       Decimal");
+Console.WriteLine(" Min:" + de1 + " Max:" + de2 + " Espaço gasto em byts: 12");
+Console.WriteLine();
+
+/*Clássico 
+
+using System;
+namespace TiposBasicosDeDados
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool completo = false;
+            bool incompleto = true;
+            char genero = 'F';
+            char letra = '\u2191';
+            sbyte sb1 = sbyte.MinValue;
+            sbyte sb2 = sbyte.MaxValue;
+            short s1 = short.MinValue;
+            short s2 = short.MaxValue;
+            int i1 = int.MinValue;
+            int i2 = int.MaxValue;
+            long l1 = long.MinValue;
+            long l2 = long.MaxValue;
+            byte b1 = byte.MinValue;
+            byte b2 = byte.MaxValue;
+            ushort u1 = ushort.MinValue;
+            ushort u2 = ushort.MaxValue;
+            uint ui1 = uint.MinValue;
+            uint ui2 = uint.MaxValue;
+            ulong ul1 = ulong.MinValue;
+            ulong ul2 = ulong.MaxValue;
+            float f1 = float.MinValue;
+            float f2 = float.MaxValue;
+            double d1 = double.MinValue;
+            double d2 = double.MaxValue;
+            decimal de1 = decimal.MinValue;
+            decimal de2 = decimal.MaxValue;
+            String nome = "Maria Green";
+            Object obj1 = "Alex Brown";
+            Object obj2 = 4.5f;
+            //float n5 = 4.5f; Tem que deixar nitido que é float(f)
+            //double n6 = 4.5; Nao segue a mesma regra anterior 
+
+            Console.WriteLine("        Tipos Basicos de dados");
+            Console.WriteLine();
+            Console.WriteLine(" Um Bool define valor verdadeiros e falsos espaço gasto em byts: 1/2 " + completo + " ou " + incompleto);
+            Console.WriteLine();
+            Console.WriteLine(" Um char é o primeiro caractere espaço gasto em byts: 2 EX: " + genero);
+            Console.WriteLine(" " + letra + " Podendo ser utilizado um bitcode tambem");
+            Console.WriteLine(" String representa o texto (é imutavel): " + nome);
+            Console.WriteLine();
+            Console.WriteLine(" Objetos podem carregar todos os tipos: " + obj1);
+            Console.WriteLine(" Outro Objeto: " + obj2);
+            Console.WriteLine();
+            Console.WriteLine("       Valores minimos e máximos armazenados:");
+            Console.WriteLine();
+            Console.WriteLine("       SByte");
+            Console.WriteLine(" Min:" + sb1 + " Max: " + sb2 + " Espaço gasto em byts: 1");
+            Console.WriteLine();
+            Console.WriteLine("       Short");
+            Console.WriteLine(" Min:" + s1 + " Max:" + s2 + " Espaço gasto em byts: 2");
+            Console.WriteLine();
+            Console.WriteLine("       Int  ");
+            Console.WriteLine(" Min:" + i1 + " Max:" + i2 + " Espaço gasto em byts: 4");
+            Console.WriteLine();
+            Console.WriteLine("       Long ");
+            Console.WriteLine(" Min:" + l1 + " Max:" + l2 + " Espaço gasto em byts: 1");
+            Console.WriteLine();
+            Console.WriteLine("       Byte ");
+            Console.WriteLine(" Min:" + b1 + " Max:" + b2 + " Espaço gasto em byts: 1");
+            Console.WriteLine();
+            Console.WriteLine("       Ushort");
+            Console.WriteLine(" Min:" + u1 + " Max:" + u2 + " Espaço gasto em byts: 2");
+            Console.WriteLine();
+            Console.WriteLine("       Uint  ");
+            Console.WriteLine(" Min:" + ui1 + " Max:" + ui2 + " Espaço gasto em byts: 4");
+            Console.WriteLine();
+            Console.WriteLine("       Ulong ");
+            Console.WriteLine(" Min:" + ul1 + " Max:" + ul2 + " Espaço gasto em byts: 8");
+            Console.WriteLine();
+            Console.WriteLine("       Float  ");
+            Console.WriteLine(" Min:" + f1 + " Max:" + f2 + " Espaço gasto em byts: 4");
+            Console.WriteLine();
+            Console.WriteLine("       Double ");
+            Console.WriteLine(" Min:" + d1 + " Max:" + d2 + " Espaço gasto em byts: 8");
+            Console.WriteLine();
+            Console.WriteLine("       Decimal");
+            Console.WriteLine(" Min:" + de1 + " Max:" + de2 + " Espaço gasto em byts: 12");
+            Console.WriteLine();
+        }
+    }
+}*/
