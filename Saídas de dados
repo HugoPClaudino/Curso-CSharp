@@ -1,0 +1,84 @@
+//Novo
+using System.Globalization;
+
+char genero = 'M';
+int idade = 22;
+double saldo = 10.35784;
+string nome = "Hugo";
+Console.WriteLine(" Impressão de variaveis.");
+Console.WriteLine("Nome: " + nome);
+Console.WriteLine("Genero: " + genero);
+Console.WriteLine("Idade: " + idade);
+Console.WriteLine("Saldo: " + saldo);
+Console.WriteLine("------------------------------------");
+//Diferença entre Write (não pula linha) e o WriteLine:
+Console.WriteLine(" Diferença entre Write e WriteLine:");
+Console.Write("Bom dia!");
+Console.WriteLine("Boa tarde!");
+Console.WriteLine("Boa noite!");
+Console.WriteLine("------------------------------------");
+//Delimitador de casas decimais:
+Console.WriteLine(" Delimitando a quantidade de casas decimais:");
+Console.WriteLine("Saldo: " + saldo.ToString("F3"));
+Console.WriteLine("Saldo: " + saldo.ToString("F2"));
+Console.WriteLine("Saldo: " + saldo.ToString("F4"));
+//Delimitador de casas decimais com definição de formatação global "using System.Globalization;" necessario!!
+Console.WriteLine("Saldo: " + saldo.ToString("F4", CultureInfo.InvariantCulture));
+Console.WriteLine("Saldo: " + saldo.ToString("F3", CultureInfo.InvariantCulture));
+Console.WriteLine("Saldo: " + saldo.ToString("F2", CultureInfo.InvariantCulture));
+Console.WriteLine("------------------------------------");
+//Placeholders, concatenação e interpolação:
+Console.WriteLine("Placeholders, concatenação e interpolação:");
+Console.WriteLine("{0} tem {1} anos e um saldo de: {2:F3} reais, sendo uma pessoa do sexo: {3}", nome, idade, saldo, genero);
+//Placeholder: cada chave {} representa o contador (sequencia) das variaveis apos as aspas
+Console.WriteLine($"{nome} tem {idade} anos e um saldo de: {saldo:F3} reais, sendo uma pessoa do sexo: {genero}");
+//Interpolação é a importação da variavel para as aspas atraves do $ e as chaves {}
+Console.WriteLine(nome + " tem " + idade + " anos e um saldo de: " + saldo.ToString("F3", CultureInfo.InvariantCulture) + " reais, sendo uma pessoa do sexo: " + genero);
+//Médoto mais antigo
+
+/*Antigo
+using System;
+using System.Globalization;
+
+namespace SaidaDeDados {
+    class Program {
+        static void Main(string[] args)
+        {
+            char genero = 'M';
+            int idade = 22;
+            double saldo = 10.35784;
+            string nome = "Hugo";
+            Console.WriteLine(" Impressão de variaveis.");
+            Console.WriteLine("Nome: " + nome);
+            Console.WriteLine("Genero: " + genero);
+            Console.WriteLine("Idade: " + idade);
+            Console.WriteLine("Saldo: " + saldo);
+            Console.WriteLine("------------------------------------");
+            //Diferença entre Write (não pula linha) e o WriteLine:
+            Console.WriteLine(" Diferença entre Write e WriteLine:");
+            Console.Write("Bom dia!");
+            Console.WriteLine("Boa tarde!");
+            Console.WriteLine("Boa noite!");
+            Console.WriteLine("------------------------------------");
+            //Delimitador de casas decimais:
+            Console.WriteLine(" Delimitando a quantidade de casas decimais:");
+            Console.WriteLine("Saldo: " + saldo.ToString("F3"));
+            Console.WriteLine("Saldo: " + saldo.ToString("F2"));
+            Console.WriteLine("Saldo: " + saldo.ToString("F4"));
+            //Delimitador de casas decimais com definição de formatação global "using System.Globalization;" necessario!!
+            Console.WriteLine("Saldo: " + saldo.ToString("F4", CultureInfo.InvariantCulture));
+            Console.WriteLine("Saldo: " + saldo.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("Saldo: " + saldo.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("------------------------------------");
+            //Placeholders, concatenação e interpolação:
+            Console.WriteLine("Placeholders, concatenação e interpolação:");
+            Console.WriteLine("{0} tem {1} anos e um saldo de: {2:F3} reais, sendo uma pessoa do sexo: {3}", nome, idade, saldo, genero);
+            //Placeholder: cada chave {} representa o contador (sequencia) das variaveis apos as aspas
+            Console.WriteLine($"{nome} tem {idade} anos e um saldo de: {saldo:F3} reais, sendo uma pessoa do sexo: {genero}");
+            //Interpolação é a importação da variavel para as aspas atraves do $ e as chaves {}
+            Console.WriteLine(nome + " tem " + idade + " anos e um saldo de: " + saldo.ToString("F3", CultureInfo.InvariantCulture) + " reais, sendo uma pessoa do sexo: " + genero);
+            //Médoto mais antigo
+        }
+            
+    }
+}*/
